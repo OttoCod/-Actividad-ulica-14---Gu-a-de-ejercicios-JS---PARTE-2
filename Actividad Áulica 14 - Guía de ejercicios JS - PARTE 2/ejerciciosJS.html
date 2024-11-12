@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios JavaScript</title>
+</head>
+<body>
+    <h1>Ejercicios de JavaScript</h1>
+
+    <!-- Ejercicio 1: Entrada de Datos por Teclado -->
+    <h2>Ejercicio 1: Entrada de Datos por Teclado</h2>
+    <script>
+        let nombre = prompt('Ingresa tu nombre a continuación: ');
+        let sueldo = prompt('Ingresa tu sueldo a continuación: ');
+        document.write('<p>Hola ' + nombre + ', tu sueldo es de: ' + sueldo + '</p>');
+    </script>
+
+    <!-- Ejercicio 2: Cálculo del Perímetro de un Cuadrado -->
+    <h2>Ejercicio 2: Cálculo del Perímetro de un Cuadrado</h2>
+    <script>
+        let valorlado = prompt('Ingrese el lado del cuadrado en cm:');
+        let producto = parseInt(valorlado) * 4;
+        document.write('<p>Los lados del cuadrado miden ' + valorlado + ' cm</p>');
+        document.write('<p>El perímetro del cuadrado es ' + producto + ' cm</p>');
+    </script>
+
+    <!-- Ejercicio 3: Suma y Producto de Cuatro Valores -->
+    <h2>Ejercicio 3: Suma y Producto de Cuatro Valores</h2>
+    <script>
+        let v1 = prompt('Ingrese el valor uno: ');
+        let v2 = prompt('Ingrese el valor dos: ');
+        let v3 = prompt('Ingrese el valor tres: ');
+        let v4 = prompt('Ingrese el valor cuatro: ');
+        let suma1 = parseInt(v1) + parseInt(v2) + parseInt(v3) + parseInt(v4);
+        let producto1 = parseInt(v1) * parseInt(v2) * parseInt(v3) * parseInt(v4);
+        document.write('<p>El resultado de la suma es: ' + suma1 + '</p>');
+        document.write('<p>El resultado de la multiplicación es: ' + producto1 + '</p>');
+    </script>
+
+    <!-- Ejercicio 4: Condicional Simple - Promoción de un Estudiante -->
+    <h2>Ejercicio 4: Promoción de un Estudiante</h2>
+    <script>
+        let nota1 = parseInt(prompt('Ingrese nota1: '));
+        let nota2 = parseInt(prompt('Ingrese nota2: '));
+        let nota3 = parseInt(prompt('Ingrese nota3: '));
+        let promedio = (nota1 + nota2 + nota3) / 3;
+        if (promedio >= 7) {
+            document.write('<p>Promocionado</p>');
+        } else {
+            document.write('<p>No promocionado</p>');
+        }
+    </script>
+
+    <!-- Ejercicio 5: Número Positivo, Negativo o Cero -->
+    <h2>Ejercicio 5: Número Positivo, Negativo o Cero</h2>
+    <script>
+        let num = parseInt(prompt('Ingrese el número a evaluar: '));
+        if (num > 0) {
+            document.write('<p>El número es positivo</p>');
+        } else if (num < 0) {
+            document.write('<p>El número es negativo</p>');
+        } else {
+            document.write('<p>El número es 0</p>');
+        }
+    </script>
+
+    <!-- Ejercicio 6: Traducción de Palabras -->
+    <h2>Ejercicio 6: Traducción de Palabras</h2>
+    <script>
+        let palabra = prompt('Ingrese la palabra: ');
+        switch (palabra) {
+            case 'casa':
+                document.write('<p>house</p>');
+                break;
+            case 'mesa':
+                document.write('<p>table</p>');
+                break;
+            case 'perro':
+                document.write('<p>dog</p>');
+                break;
+            case 'gato':
+                document.write('<p>cat</p>');
+                break;
+            default:
+                document.write('<p>No ingresó un valor correcto</p>');
+                break;
+        }
+    </script>
+
+    <!-- Ejercicio 7: Multiplicación de 11 hasta 25 Veces -->
+    <h2>Ejercicio 7: Multiplicación de 11 hasta 25 Veces</h2>
+    <script>
+        let valor = 11;
+        let contador = 0;
+        while (contador < 25) {
+            document.write('<p>Valor: ' + contador + ' es: ' + valor + '</p>');
+            contador++;
+            valor += 11;
+        }
+    </script>
+
+    <!-- Ejercicio 8: Mínimo de Tres Números -->
+    <h2>Ejercicio 8: Mínimo de Tres Números</h2>
+    <script>
+        function enteros(num1, num2, num3) {
+            return Math.min(num1, num2, num3);
+        }
+        let numero1 = parseInt(prompt("Ingrese el primer número: "));
+        let numero2 = parseInt(prompt("Ingrese el segundo número: "));
+        let numero3 = parseInt(prompt("Ingrese el tercer número: "));
+        let resultado = enteros(numero1, numero2, numero3);
+        document.write('<p>El número menor es: ' + resultado + '</p>');
+    </script>
+
+</body>
+</html>
